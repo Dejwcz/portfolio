@@ -15,9 +15,88 @@
   font-style: normal;
 }
 
+$primary: #3563e9;
+$secondary: #2b2a31;
+$akcent: #ffa820;
+$highlight: #31cc71;
+$success: #31cc71;
+$danger: #ff5c5c;
+$warning: #fdb02f;
+$info: #37bdf8;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
 body {
   font-family: "Play", sans-serif;
+  padding-top: 58px;
 }
+
+// skill progress chart begin
+.skills-container {
+  background: linear-gradient(135deg, #667eea 0%, #3563e9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skill-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-circle circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.skill-circle .bg {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.skill-circle .progress {
+  stroke: #ffffff;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.skill-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.skill-percent {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+// skill progress chart end
