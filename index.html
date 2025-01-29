@@ -3,20 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dejw's portfolio</title>
+
+    <meta
+      name="description"
+      content="David Smětala – Junior .NET developer with experience in C#, ASP.NET, web development, and databases. Portfolio, projects, and contact details."
+    />
+    <meta
+      name="keywords"
+      content="David Smětala, .NET, C#, ASP.NET, developer, web development, Bootstrap, SQL, Git, Azure, Software Engineer"
+    />
+    <meta name="author" content="David Smětala" />
+    <meta name="robots" content="index, follow" />
+    <!-- Allows indexing -->
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="David Smětala – .NET Developer" />
+    <meta
+      property="og:description"
+      content="David Smětala's portfolio – project showcases, skills, and contact information."
+    />
+    <meta property="og:image" content="https://x213.cz/pictures/preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://x213.cz/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="David Smětala – Junior .NET Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio of David Smětala showcasing projects and technical skills."
+    />
+    <meta
+      property="twitter:image"
+      content="https://x213.cz/pictures/preview.jpg"
+    />
+
+    <title>David Smětala | .NET Developer & Web Developer Portfolio</title>
+
     <link rel="stylesheet" href="scss/custom.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "David Smětala",
+        "url": "https://x213.cz/",
+        "sameAs": [
+          "https://www.linkedin.com/in/david-smetala/",
+          "https://github.com/Dejwcz"
+        ],
+        "jobTitle": "Junior .NET Programátor",
+        "description": "David Smětala – Junior .NET developer with experience in C#, ASP.NET, web development, and databases. Portfolio, projects, and contact details.",
+        "image": "https://x213.cz/pictures/preview.jpg",
+        "worksFor": {
+          "@type": "Nobody",
+          "name": "Freelancer"
+        }
+      }
+    </script>
   </head>
   <body class="bg-primary-subtle">
     <header class="header">
       <nav
         class="navbar navbar-expand-lg bg-primary rounded-bottom-3 navbar-dark fixed-top p-0"
+        role="navigation"
+        aria-label="Main navigation"
       >
         <div class="container-fluid">
           <a class="navbar-brand fw-bold text-light" href="#">
-            <h1 class="d-none d-sm-block m-0">David Smětala - Programmer</h1>
-            <h1 class="d-block d-sm-none fs-5 m-0">
+            <span class="d-none d-sm-block m-1"
+              >David Smětala - Programmer</span
+            >
+            <span class="d-block d-sm-none m-2 fs-6">
               David Smětala - Programmer
-            </h1></a
+            </span></a
           >
           <button
             class="navbar-toggler"
@@ -35,20 +99,34 @@
           >
             <ul class="navbar-nav text-light">
               <li class="nav-item">
-                <a class="nav-link text-light text-center" href="#">About</a>
+                <a
+                  class="nav-link text-light text-center"
+                  href="#"
+                  aria-label="Jump to About section"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light text-center" href="#projects"
+                <a
+                  class="nav-link text-light text-center"
+                  href="#projects"
+                  aria-label="Jump to Projects section"
                   >Projects</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light text-center" href="#hobbies"
+                <a
+                  class="nav-link text-light text-center"
+                  href="#hobbies"
+                  aria-label="Jump to Hobbies section"
                   >Hobbies</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light text-center" href="#contact"
+                <a
+                  class="nav-link text-light text-center"
+                  href="#contact"
+                  aria-label="Jump to Contact section"
                   >Contact</a
                 >
               </li>
@@ -66,7 +144,7 @@
               <img
                 src="./pictures/0928_113033.jpg"
                 class="img-fluid rounded-3"
-                alt="Dejw on the stick"
+                alt="David after obstacle cource race"
               />
             </picture>
             <div
@@ -108,7 +186,17 @@
                       data-skill=".NET"
                       data-percent="90"
                     >
-                      <svg class="skill-circle">
+                      <svg
+                        class="skill-circle"
+                        role="img"
+                        aria-labelledby="skill-dotnet"
+                        aria-describedby="skill-dotnet-desc"
+                      >
+                        <title id="skill-dotnet">Skill .NET - 90%</title>
+                        <desc id="skill-dotnet-desc">
+                          Skills in .NET include C#, ASP.NET, MVC, WPF, Entity
+                          Framework, LINQ, REST API
+                        </desc>
                         <circle class="bg" cx="70" cy="70" r="70"></circle>
                         <circle
                           class="progress"
@@ -133,7 +221,19 @@
                       data-skill="WebDevelopment"
                       data-percent="85"
                     >
-                      <svg class="skill-circle">
+                      <svg
+                        class="skill-circle"
+                        role="img"
+                        aria-labelledby="skill-webdev"
+                        aria-describedby="skill-webdev-desc"
+                      >
+                        <title id="skill-webdev">
+                          Skill Web Development - 85%
+                        </title>
+                        <desc id="skill-webdev-desc">
+                          Skills in Web Development include HTML5, CSS3,
+                          Bootstrap, JavaScript, React, PHP
+                        </desc>
                         <circle class="bg" cx="70" cy="70" r="70"></circle>
                         <circle
                           class="progress"
@@ -158,7 +258,19 @@
                       data-skill="OtherProgramingLanguages"
                       data-percent="60"
                     >
-                      <svg class="skill-circle">
+                      <svg
+                        class="skill-circle"
+                        role="img"
+                        aria-labelledby="skill-other"
+                        aria-describedby="skill-other-desc"
+                      >
+                        <title id="skill-other">
+                          Skill Other Programing Languages - 60%
+                        </title>
+                        <desc id="skill-other-desc">
+                          Skills in Other Programing Languages include Python,
+                          Java
+                        </desc>
                         <circle class="bg" cx="70" cy="70" r="70"></circle>
                         <circle
                           class="progress"
@@ -181,7 +293,19 @@
                       data-skill="Databases"
                       data-percent="75"
                     >
-                      <svg class="skill-circle">
+                      <svg
+                        class="skill-circle"
+                        role="img"
+                        aria-labelledby="skill-databases"
+                        aria-describedby="skill-databases-desc"
+                      >
+                        <title id="skill-databases">
+                          Skill Databases - 75%
+                        </title>
+                        <desc id="skill-databases-desc">
+                          Skills in Databases include Microsoft SQL Server,
+                          Oracle (PL/SQL), MySQL, MS Access
+                        </desc>
                         <circle class="bg" cx="70" cy="70" r="70"></circle>
                         <circle
                           class="progress"
@@ -206,7 +330,19 @@
                       data-skill="DevOpsAndTools"
                       data-percent="65"
                     >
-                      <svg class="skill-circle">
+                      <svg
+                        class="skill-circle"
+                        role="img"
+                        aria-labelledby="skill-devops"
+                        aria-describedby="skill-devops-desc"
+                      >
+                        <title id="skill-devops">
+                          Skill DevOps & Tools - 65%
+                        </title>
+                        <desc id="skill-devops-desc">
+                          Skills in DevOps & Tools include Git, GitHub, Azure,
+                          Docker
+                        </desc>
                         <circle class="bg" cx="70" cy="70" r="70"></circle>
                         <circle
                           class="progress"
@@ -243,41 +379,57 @@
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
           >
-            <!-- school project -->
-            <div class="col">
-              <div class="card mb-1">
+            <!-- exam project -->
+            <div class="col mb-1">
+              <div class="card h-100 d-flex flex-column">
                 <img
-                  src="./pictures/px.png"
+                  src="./pictures/examproject.png"
                   class="card-img-top"
                   alt="obrazek"
                 />
-                <div class="card-body">
-                  <h5 class="card-title">School project</h5>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Galerie Mezi Poli</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
-                    something
+                    Web Pages
                   </h6>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam pariatur neque odit officiis soluta. Libero rerum
-                    sit pariatur exercitationem incidunt praesentium temporibus,
-                    sed dicta!
+                    The Galerie Mezi Poli website, built with Bootstrap,
+                    features a modern and responsive design. The project
+                    includes a user-friendly interface with AI-generated images
+                    and streamlined navigation to showcase art and the gallery.
                   </p>
-                  <div class="d-flex justify-content-around">
-                    <a href="#" class="btn btn-primary">WWW</a>
-                    <a href="#" class="btn btn-primary">GitHub</a>
+                  <div
+                    class="mt-auto d-flex justify-content-around align-items-center"
+                  >
+                    <a
+                      href="https://x213.cz/examproject"
+                      class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open project Galerie Mezi Poli in a new tab"
+                      >Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/Dejwcz/GalerieMeziPoli"
+                      class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open GitHub repository of Galerie Mezi Poli in a new tab"
+                      >GitHub</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
             <!-- muj domecek -->
-            <div class="col">
-              <div class="card mb-1">
+            <div class="col mb-1">
+              <div class="card h-100 d-flex flex-column">
                 <img
                   src="./pictures/mujdomecek.png"
                   class="card-img-top"
                   alt="Muj Domeček picture"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Můj Domeček</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
                     ASP.NET Core Application
@@ -289,15 +441,23 @@
                     Bootstrap 5, it offers a responsive design and supports
                     Czech and English.
                   </p>
-                  <div class="d-flex justify-content-around">
+                  <div
+                    class="mt-auto d-flex justify-content-around align-items-center"
+                  >
                     <a
                       href="https://mujdomecek.runasp.net/"
                       class="btn btn-primary"
-                      >WWW</a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open project Můj Domeček in a new tab"
+                      >Live Demo</a
                     >
                     <a
                       href="https://github.com/Dejwcz/MyLittleHouse"
                       class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open GitHub repository of Můj Domeček in a new tab"
                       >GitHub</a
                     >
                   </div>
@@ -305,14 +465,14 @@
               </div>
             </div>
             <!-- BrickGame -->
-            <div class="col">
-              <div class="card mb-1">
+            <div class="col mb-1">
+              <div class="card h-100 d-flex flex-column">
                 <img
                   src="./pictures/brickgame.png"
                   class="card-img-top"
                   alt="Brick game picture"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Tetris Clone</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
                     WPF Application
@@ -324,10 +484,15 @@
                     responsive controls, and a user-friendly interface built
                     with WPF styles, templates, and layouts.
                   </p>
-                  <div class="d-flex justify-content-around">
+                  <div
+                    class="mt-auto d-flex justify-content-around align-items-center"
+                  >
                     <a
                       href="https://github.com/Dejwcz/Brick_game"
                       class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open GitHub repository of Tetris Clone in a new tab"
                       >GitHub</a
                     >
                   </div>
@@ -335,14 +500,14 @@
               </div>
             </div>
             <!-- magistri -->
-            <div class="col">
-              <div class="card mb-1">
+            <div class="col mb-1">
+              <div class="card h-100 d-flex flex-column">
                 <img
                   src="./pictures/magistri.png"
                   class="card-img-top"
                   alt="Magistri app picture"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Magistri</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
                     ASP.NET Core Application
@@ -354,15 +519,23 @@
                     application allows efficient management of school-related
                     data with a clean, user-friendly interface.
                   </p>
-                  <div class="d-flex justify-content-around">
+                  <div
+                    class="mt-auto d-flex justify-content-around align-items-center"
+                  >
                     <a
                       href="https://schoolwebapp-ds.runasp.net/"
                       class="btn btn-primary"
-                      >WWW</a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open project Magistri in a new tab"
+                      >Live Demo</a
                     >
                     <a
                       href="https://github.com/Dejwcz/Magistri"
                       class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open GitHub repository of Magistri in a new tab"
                       >GitHub</a
                     >
                   </div>
@@ -370,14 +543,14 @@
               </div>
             </div>
             <!-- RIS -->
-            <div class="col">
-              <div class="card mb-1">
+            <div class="col mb-1">
+              <div class="card h-100 d-flex flex-column">
                 <img
                   src="./pictures/RIS.png"
                   class="card-img-top"
-                  alt="RIS picture"
+                  alt="Company Information System picture"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">RIS 0.4</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
                     WPF Application
@@ -389,10 +562,15 @@
                     a solution for managing and analyzing personnel data within
                     a military company environment.
                   </p>
-                  <div class="d-flex justify-content-around">
+                  <div
+                    class="mt-auto d-flex justify-content-around align-items-center"
+                  >
                     <a
                       href="https://github.com/Dejwcz/MyLittleHouse"
                       class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open GitHub repository of RIS 0.4 in a new tab"
                       >GitHub</a
                     >
                   </div>
@@ -400,14 +578,14 @@
               </div>
             </div>
             <!-- Math Example Generator -->
-            <div class="col">
-              <div class="card mb-1">
+            <div class="col mb-1">
+              <div class="card h-100 d-flex flex-column">
                 <img
                   src="./pictures/mathgen.png"
                   class="card-img-top"
-                  alt="Muj Domeček picture"
+                  alt="Math Example Generator picture"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Examples generator</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Python</h6>
                   <p class="card-text">
@@ -418,10 +596,15 @@
                     text files in either English or Czech, making it easy to
                     practice and check your work.
                   </p>
-                  <div class="d-flex justify-content-around">
+                  <div
+                    class="mt-auto d-flex justify-content-around align-items-center"
+                  >
                     <a
                       href="https://github.com/Dejwcz/Math-example-generator"
                       class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open GitHub repository of Examples generator in a new tab"
                       >GitHub</a
                     >
                   </div>
@@ -435,7 +618,11 @@
       <section id="hobbies">
         <div class="container">
           <h2 class="text-center text-primary m-3">My Hobbies</h2>
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            aria-live="polite"
+          >
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -566,7 +753,10 @@
       <section id="contact">
         <h2 class="text-center text-primary m-3">Contacts</h2>
         <div class="d-flex justify-content-center mb-3">
-          <a class="mx-2" href="https://www.facebook.com/Dejwcz/"
+          <a
+            class="mx-2"
+            href="https://www.facebook.com/Dejwcz/"
+            aria-label="Facebook profile of David Smetala"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -574,13 +764,20 @@
               fill="currentColor"
               class="bi bi-facebook"
               viewBox="0 0 16 16"
+              role="img"
+              aria-labelledby="facebook-title"
             >
+              <title id="facebook-title">Facebook</title>
               <path
+                aria-hidden="true"
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
               />
             </svg>
           </a>
-          <a class="mx-2" href="https://github.com/Dejwcz"
+          <a
+            class="mx-2"
+            href="https://github.com/Dejwcz"
+            aria-label="GitHub profile of David Smetala"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -588,13 +785,20 @@
               fill="currentColor"
               class="bi bi-github"
               viewBox="0 0 16 16"
+              role="img"
+              aria-labelledby="github-title"
             >
+              <title id="github-title">GitHub</title>
               <path
+                aria-hidden="true"
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
               />
             </svg>
           </a>
-          <a class="mx-2" href="https://www.linkedin.com/in/david-smetala/"
+          <a
+            class="mx-2"
+            href="https://www.linkedin.com/in/david-smetala/"
+            aria-label="LinkedIn profile of David Smetala"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -602,8 +806,12 @@
               fill="currentColor"
               class="bi bi-linkedin"
               viewBox="0 0 16 16"
+              role="img"
+              aria-labelledby="linkedin-title"
             >
+              <title id="linkedin-title">LinkedIn</title>
               <path
+                aria-hidden="true"
                 d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
               />
             </svg>
@@ -612,8 +820,13 @@
       </section>
     </main>
 
-    <footer class="footer bg-primary small text-center text-white p-3">
-      <div class="container px-4 px-lg-5">Copyright &copy; Dejw 2025</div>
+    <footer
+      class="footer bg-primary small text-center text-white p-3"
+      aria-label="Copyright information"
+    >
+      <div class="container px-4 px-lg-5">
+        © 2025 David Smětala. All rights reserved.
+      </div>
     </footer>
 
     <script
