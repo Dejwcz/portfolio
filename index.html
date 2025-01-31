@@ -70,7 +70,6 @@
     <header class="header">
       <nav
         class="navbar navbar-expand-lg bg-primary rounded-bottom-3 navbar-dark fixed-top p-0"
-        role="navigation"
         aria-label="Main navigation"
       >
         <div class="container-fluid">
@@ -125,7 +124,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link text-light text-center"
-                  href="#contact"
+                  href="#contact-me"
                   aria-label="Jump to Contact section"
                   >Contact</a
                 >
@@ -137,40 +136,36 @@
     </header>
     <main>
       <!-- picture and texts with responsive behavior-->
-      <section>
-        <div class="container mb-2">
-          <div class="position-relative">
-            <picture>
-              <img
-                src="./pictures/0928_113033.jpg"
-                class="img-fluid rounded-3"
-                alt="David after obstacle cource race"
-              />
-            </picture>
-            <div
-              class="position-absolute top-0 start-0 mt-sm-5 ms-sm-5 mt-0 ms-1 fs-4"
-            >
-              <p class="text-start text-primary mb-0">Hi, my name is</p>
-              <p class="fw-bold text-start text-primary">David Smětala</p>
-              <p class="d-none d-lg-block text-primary fs-6 m-0">
-                a junior .NET programmer eager to learn,
-              </p>
-              <p class="d-none d-lg-block text-primary fs-6">
-                grow, and code great things
-              </p>
-            </div>
-            <div class="position-absolute bottom-0 start-0 text-light"></div>
-          </div>
+      <div class="container mb-2">
+        <div class="position-relative">
+          <picture>
+            <img
+              src="./pictures/0928_113033.jpg"
+              class="img-fluid rounded-3"
+              alt="David after obstacle cource race"
+            />
+          </picture>
           <div
-            class="bg-primary opacity-75 text-light text-center rounded-bottom-2 d-block d-lg-none"
+            class="position-absolute top-0 start-0 mt-sm-5 ms-sm-5 mt-0 ms-1 fs-4"
           >
-            <p class="m-0 fs-6">
-              a junior .NET programmer eager to learn,grow,
+            <p class="text-start text-primary mb-0">Hi, my name is</p>
+            <p class="fw-bold text-start text-primary">David Smětala</p>
+            <p class="d-none d-lg-block text-primary fs-6 m-0">
+              a junior .NET programmer eager to learn,
             </p>
-            <p class="m-0 fs-6">and code great things</p>
+            <p class="d-none d-lg-block text-primary fs-6">
+              grow, and code great things
+            </p>
           </div>
+          <div class="position-absolute bottom-0 start-0 text-light"></div>
         </div>
-      </section>
+        <div
+          class="bg-primary opacity-75 text-light text-center rounded-bottom-2 d-block d-lg-none"
+        >
+          <p class="m-0 fs-6">a junior .NET programmer eager to learn,grow,</p>
+          <p class="m-0 fs-6">and code great things</p>
+        </div>
+      </div>
       <!-- skill section -->
       <section>
         <div class="container mb-2">
@@ -614,7 +609,7 @@
           </div>
         </div>
       </section>
-      <!-- Hobbies -->
+      <!-- hobbies -->
       <section id="hobbies">
         <div class="container">
           <h2 class="text-center text-primary m-3">My Hobbies</h2>
@@ -749,9 +744,81 @@
           Climbing, volunteering, being a dad, being a soldier and hiking
         </p>
       </section>
-      <!-- Social  -->
-      <section id="contact">
-        <h2 class="text-center text-primary m-3">Contacts</h2>
+      <!-- contact Me -->
+      <section id="contact-me">
+        <div class="container mt-3">
+          <div
+            class="border border-2 border-primary rounded-2 p-3 position-relative"
+          >
+            <h2 class="text-center text-primary m-3">Contact Me</h2>
+            <div
+              class="position-absolute top-0 end-0 text-primary me-2 d-flex align-items-center gap-1"
+            >
+              <p class="mb-0"><small>Powered by</small></p>
+              <img
+                src="./pictures/formspree-new.svg"
+                alt="Formspree Logo"
+                width="70"
+              />
+            </div>
+            <form
+              id="my-form"
+              action="https://formspree.io/f/xyzkjkqy"
+              method="POST"
+              class="row g-3"
+            >
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  name="message"
+                  placeholder="Your message here..."
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="col-4 mx-auto">
+                  <button
+                    id="my-form-button"
+                    type="submit"
+                    class="btn btn-primary w-100"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+              <!-- Added for message sending status -->
+              <div id="my-form-status" class="mt-3 text-center"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Social sites  -->
+      <section id="contact-social-sites">
+        <h2 class="text-center text-primary m-3">Or find me on</h2>
         <div class="d-flex justify-content-center mb-3">
           <a
             class="mx-2"
@@ -830,10 +897,11 @@
     </footer>
 
     <script
-      src="./scss/bootstrap.bundle.min.js"
+      src="./js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./scss/skillProgresChart.js"></script>
+    <script src="./js/skillProgresChart.js"></script>
+    <script src="./js/emailForm.js"></script>
   </body>
 </html>

@@ -29,6 +29,11 @@ $info: #37bdf8;
 // Then add additional custom code here
 
 body {
+  // background-image: url("../pictures/background2.webp");
+  // background-size: cover; /* Roztáhne obrázek na celou stránku */
+  // background-position: center; /* Vycentruje obrázek */
+  // background-repeat: no-repeat; /* Zabrání opakování */
+  // background-attachment: fixed; /* Fixuje pozadí při scrollování */
   font-family: "Play", sans-serif;
   padding-top: 52px;
 }
