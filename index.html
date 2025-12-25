@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta
       name="description"
-      content="David Smětala – Junior .NET developer with experience in C#, ASP.NET, web development, and databases. Portfolio, projects, and contact details."
+      content="David Smětala — Software Engineer (.NET / Full-stack). Builds production-ready web apps and services with C#, ASP.NET, SQL, and Vue/React. Remote-ready."
     />
     <meta
       name="keywords"
-      content="David Smětala, .NET, C#, ASP.NET, developer, web development, Bootstrap, SQL, Git, Azure, Software Engineer"
+      content="David Smětala, Software Engineer, .NET, C#, ASP.NET, Full-stack, Vue, React, SQL, Microservices, DDD, Event-driven"
     />
     <meta name="author" content="David Smětala" />
     <meta name="robots" content="index, follow" />
     <!-- Allows indexing -->
 
-    <meta property="og:title" content="David Smětala – .NET Developer" />
+    <meta property="og:title" content="David Smětala — Software Engineer" />
     <meta
       property="og:description"
-      content="David Smětala's portfolio – project showcases, skills, and contact information."
+      content="Selected .NET and full-stack work, proof of experience, and contact."
     />
-    <meta property="og:image" content="https://x213.cz/pictures/preview.jpg" />
+    <meta property="og:image" content="https://x213.cz/pictures/preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://x213.cz/" />
@@ -31,18 +31,18 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:title"
-      content="David Smětala – Junior .NET Developer"
+      content="David Smětala — Software Engineer"
     />
     <meta
       property="twitter:description"
-      content="Portfolio of David Smětala showcasing projects and technical skills."
+      content="Selected .NET and full-stack work, proof of experience, and contact."
     />
     <meta
       property="twitter:image"
-      content="https://x213.cz/pictures/preview.jpg"
+      content="https://x213.cz/pictures/preview.png"
     />
 
-    <title>David Smětala | .NET Developer & Web Developer Portfolio</title>
+    <title>David Smětala | Software Engineer (.NET / Full-stack)</title>
 
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -62,31 +62,29 @@
           "https://www.linkedin.com/in/david-smetala/",
           "https://github.com/Dejwcz"
         ],
-        "jobTitle": "Junior .NET Programátor",
-        "description": "David Smětala – Junior .NET developer with experience in C#, ASP.NET, web development, and databases. Portfolio, projects, and contact details.",
-        "image": "https://x213.cz/pictures/preview.jpg",
+        "jobTitle": "Software Engineer (.NET / Full-stack)",
+        "description": "Software Engineer focused on .NET and full-stack web apps. Experience with C#, ASP.NET, SQL, Vue/React, microservices, DDD, and event-driven architecture.",
+        "image": "https://x213.cz/pictures/preview.png",
         "worksFor": {
-          "@type": "Nobody",
-          "name": "Freelancer"
+          "@type": "Organization",
+          "name": "Self-employed"
         }
       }
     </script>
   </head>
-  <body class="bg-primary-subtle">
+  <body class="bg-primary-subtle site-root" id="top">
     <header class="header">
       <nav
-        class="navbar navbar-expand-lg bg-primary rounded-bottom-3 navbar-dark fixed-top p-0"
+        class="navbar navbar-expand-lg bg-primary rounded-bottom-3 navbar-dark fixed-top p-0 main-nav"
         aria-label="Main navigation"
       >
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold text-light" href="#">
-            <span class="d-none d-sm-block m-1"
-              >David Smětala - Programmer</span
+        <div class="container">
+          <a class="navbar-brand fw-bold text-light d-flex flex-column" href="#top">
+            <span class="brand-name">David Smětala</span>
+            <span class="brand-role d-none d-md-block"
+              >Software Engineer (.NET / Full-stack)</span
             >
-            <span class="d-block d-sm-none m-2 fs-6">
-              David Smětala - Programmer
-            </span></a
-          >
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -99,355 +97,508 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-end align-items-center gap-3"
             id="navbarNav"
           >
             <ul class="navbar-nav text-light">
               <li class="nav-item">
-                <a
-                  class="nav-link text-light text-center"
-                  href="#"
-                  aria-label="Jump to About section"
-                  >About</a
-                >
+                <a class="nav-link text-light text-center" href="#about">
+                  <span data-lang="cs">O mně</span>
+                  <span data-lang="en">About</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link text-light text-center"
-                  href="#projects"
-                  aria-label="Jump to Projects section"
-                  >Projects</a
-                >
+                <a class="nav-link text-light text-center" href="#proof">
+                  <span data-lang="cs">Praxe</span>
+                  <span data-lang="en">Experience</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link text-light text-center"
-                  href="#hobbies"
-                  aria-label="Jump to Hobbies section"
-                  >Hobbies</a
-                >
+                <a class="nav-link text-light text-center" href="#skills">
+                  <span data-lang="cs">Dovednosti</span>
+                  <span data-lang="en">Skills</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link text-light text-center"
-                  href="#contact-me"
-                  aria-label="Jump to Contact section"
-                  >Contact</a
-                >
+                <a class="nav-link text-light text-center" href="#projects">
+                  <span data-lang="cs">Projekty</span>
+                  <span data-lang="en">Projects</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light text-center" href="#contact-me">
+                  <span data-lang="cs">Kontakt</span>
+                  <span data-lang="en">Contact</span>
+                </a>
               </li>
             </ul>
-          </div>
+            <div class="lang-toggle d-flex gap-2 ms-lg-3">
+              <button
+                class="btn btn-sm btn-outline-light"
+                type="button"
+                data-lang-switch="cs"
+                aria-pressed="false"
+              >
+                CZ
+              </button>
+              <button
+                class="btn btn-sm btn-outline-light active"
+                type="button"
+                data-lang-switch="en"
+                aria-pressed="true"
+              >
+                EN
+              </button>
+            </div>
+                      </div>
         </div>
       </nav>
     </header>
     <main>
-      <!-- picture and texts with responsive behavior-->
-      <div class="container mb-2">
-        <div class="position-relative">
-          <picture>
-            <img
-              src="./pictures/0928_113033.jpg"
-              class="img-fluid rounded-3"
-              alt="David after obstacle cource race"
-            />
-          </picture>
-          <div
-            class="position-absolute top-0 start-0 mt-sm-5 ms-sm-5 mt-0 ms-1 fs-4"
-          >
-            <p class="text-start text-primary mb-0">Hi, my name is</p>
-            <p class="fw-bold text-start text-primary">David Smětala</p>
-            <p class="d-none d-lg-block text-primary fs-6 m-0">
-              a junior .NET programmer eager to learn,
-            </p>
-            <p class="d-none d-lg-block text-primary fs-6">
-              grow, and code great things
+      <section id="about" class="hero-section section-pad">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <div class="hero-badges d-flex flex-wrap gap-2 mb-3">
+                <span class="badge rounded-pill text-bg-light border"
+                  >Remote</span
+                >
+                <span class="badge rounded-pill text-bg-light border"
+                  >.NET / Full-stack</span
+                >
+                <span class="badge rounded-pill text-bg-light border"
+                  >EU / CZ</span
+                >
+              </div>
+              <h1 class="hero-title">
+                David Smětala
+                <span class="hero-role"
+                  >Software Engineer (.NET / Full-stack)</span
+                >
+              </h1>
+              <p class="hero-lead">
+                <span data-lang="cs"
+                  >Stavím produkční webové aplikace a služby v .NETu. Mám
+                  zkušenost s mikroservisními architekturami, DDD a event-driven
+                  přístupem.</span
+                >
+                <span data-lang="en"
+                  >I build production-ready web apps and services in .NET.
+                  Experience with microservice architectures, DDD, and event-driven
+                  approach.</span
+                >
+              </p>
+              <p class="hero-sub">
+                <span data-lang="cs"
+                  >1 rok praxe v edubox.cz (.NET + Vue), plus vlastní projekty a
+                  práce na volné noze.</span
+                >
+                <span data-lang="en"
+                  >1 year at edubox.cz (.NET + Vue), plus self-driven projects and
+                  freelance work.</span
+                >
+              </p>
+              <div class="hero-tags d-flex flex-wrap gap-2 mb-4">
+                <span class="tag">Microservices</span>
+                <span class="tag">DDD</span>
+                <span class="tag">Event-driven</span>
+              </div>
+              <div class="hero-cta d-flex flex-wrap gap-3">
+                <a href="#projects" class="btn btn-primary btn-lg">
+                  <span data-lang="cs">Zobrazit projekty</span>
+                  <span data-lang="en">View projects</span>
+                </a>
+                <a href="#contact-me" class="btn btn-outline-primary btn-lg">
+                  <span data-lang="cs">Napište mi</span>
+                  <span data-lang="en">Contact me</span>
+                </a>
+                <a
+                  href="https://github.com/Dejwcz"
+                  class="btn btn-outline-dark btn-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/david-smetala/"
+                  class="btn btn-outline-dark btn-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-media">
+                <img
+                  src="./pictures/0928_113033.jpg"
+                  class="hero-photo"
+                  alt="Portrait of David Smětala"
+                />
+                <div class="hero-card">
+                  <p class="hero-card-title">
+                    <span data-lang="cs">Aktuálně ladím</span>
+                    <span data-lang="en">Currently working on</span>
+                  </p>
+                  <ul class="hero-card-list">
+                    <li>React Exhibit</li>
+                    <li>Můj Domeček</li>
+                    <li>hapecko.x213.cz</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="proof" class="section-pad">
+        <div class="container">
+          <div class="section-head text-center">
+            <h2 class="section-title">
+              <span data-lang="cs">Zkušenosti</span>
+              <span data-lang="en">Proof of Experience</span>
+            </h2>
+            <p class="section-lead">
+              <span data-lang="cs"
+                >Pár faktů o tom, co umím.</span
+              >
+              <span data-lang="en"
+                >Short facts that show I can deliver production results.</span
+              >
             </p>
           </div>
-          <div class="position-absolute bottom-0 start-0 text-light"></div>
-        </div>
-        <div
-          class="bg-primary opacity-75 text-light text-center rounded-bottom-2 d-block d-lg-none"
-        >
-          <p class="m-0 fs-6">a junior .NET programmer eager to learn,grow,</p>
-          <p class="m-0 fs-6">and code great things</p>
-        </div>
-      </div>
-      <!-- skill section -->
-      <section>
-        <div class="container mb-2">
-          <div class="row justify-content-center">
-            <div class="col">
-              <div class="skills-container">
-                <h2 class="text-center text-white mb-5">My Skills</h2>
-                <div class="row justify-content-center">
-                  <!-- .NET -->
-                  <div class="col-sm-6 col-md-4 mb-4">
-                    <div
-                      class="skill-item mx-auto animated"
-                      data-skill=".NET"
-                      data-percent="90"
-                    >
-                      <svg
-                        class="skill-circle"
-                        role="img"
-                        aria-labelledby="skill-dotnet"
-                        aria-describedby="skill-dotnet-desc"
-                      >
-                        <title id="skill-dotnet">Skill .NET - 90%</title>
-                        <desc id="skill-dotnet-desc">
-                          Skills in .NET include C#, ASP.NET, MVC, WPF, Entity
-                          Framework, LINQ, REST API
-                        </desc>
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle
-                          class="progress"
-                          cx="70"
-                          cy="70"
-                          r="70"
-                        ></circle>
-                      </svg>
-                      <div class="skill-text">
-                        <div class="skill-percent">0%</div>
-                        <div class="skill-name">.NET</div>
-                      </div>
-                    </div>
-                    <p class="text-white text-center mt-3">
-                      C#, ASP.NET, MVC, WPF, Entity Framework, LINQ, REST API
-                    </p>
-                  </div>
-                  <!-- Web Development -->
-                  <div class="col-sm-6 col-md-4 mb-4">
-                    <div
-                      class="skill-item mx-auto animated"
-                      data-skill="WebDevelopment"
-                      data-percent="85"
-                    >
-                      <svg
-                        class="skill-circle"
-                        role="img"
-                        aria-labelledby="skill-webdev"
-                        aria-describedby="skill-webdev-desc"
-                      >
-                        <title id="skill-webdev">
-                          Skill Web Development - 85%
-                        </title>
-                        <desc id="skill-webdev-desc">
-                          Skills in Web Development include HTML5, CSS3,
-                          Bootstrap, JavaScript, React, PHP
-                        </desc>
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle
-                          class="progress"
-                          cx="70"
-                          cy="70"
-                          r="70"
-                        ></circle>
-                      </svg>
-                      <div class="skill-text">
-                        <div class="skill-percent">0%</div>
-                        <div class="skill-name">Web Development</div>
-                      </div>
-                    </div>
-                    <p class="text-white text-center mt-3">
-                      HTML5, CSS3, Bootstrap, JavaScript, React, PHP
-                    </p>
-                  </div>
-                  <!-- Other Programing Languages -->
-                  <div class="col-sm-6 col-md-4 mb-4">
-                    <div
-                      class="skill-item mx-auto animated"
-                      data-skill="OtherProgramingLanguages"
-                      data-percent="60"
-                    >
-                      <svg
-                        class="skill-circle"
-                        role="img"
-                        aria-labelledby="skill-other"
-                        aria-describedby="skill-other-desc"
-                      >
-                        <title id="skill-other">
-                          Skill Other Programing Languages - 60%
-                        </title>
-                        <desc id="skill-other-desc">
-                          Skills in Other Programing Languages include Python,
-                          Java
-                        </desc>
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle
-                          class="progress"
-                          cx="70"
-                          cy="70"
-                          r="70"
-                        ></circle>
-                      </svg>
-                      <div class="skill-text">
-                        <div class="skill-percent">0%</div>
-                        <div class="skill-name">Other Programing Languages</div>
-                      </div>
-                    </div>
-                    <p class="text-white text-center mt-3">Python, Java</p>
-                  </div>
-                  <!-- Databases -->
-                  <div class="col-sm-6 col-md-4 mb-4">
-                    <div
-                      class="skill-item mx-auto animated"
-                      data-skill="Databases"
-                      data-percent="75"
-                    >
-                      <svg
-                        class="skill-circle"
-                        role="img"
-                        aria-labelledby="skill-databases"
-                        aria-describedby="skill-databases-desc"
-                      >
-                        <title id="skill-databases">
-                          Skill Databases - 75%
-                        </title>
-                        <desc id="skill-databases-desc">
-                          Skills in Databases include Microsoft SQL Server,
-                          Oracle (PL/SQL), MySQL, MS Access
-                        </desc>
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle
-                          class="progress"
-                          cx="70"
-                          cy="70"
-                          r="70"
-                        ></circle>
-                      </svg>
-                      <div class="skill-text">
-                        <div class="skill-percent">0%</div>
-                        <div class="skill-name">Databases</div>
-                      </div>
-                    </div>
-                    <p class="text-white text-center mt-3">
-                      Microsoft SQL Server, Oracle (PL/SQL), MySQL, MS Access
-                    </p>
-                  </div>
-                  <!-- DevOps & Tools -->
-                  <div class="col-sm-6 col-md-4 mb-4">
-                    <div
-                      class="skill-item mx-auto animated"
-                      data-skill="DevOpsAndTools"
-                      data-percent="65"
-                    >
-                      <svg
-                        class="skill-circle"
-                        role="img"
-                        aria-labelledby="skill-devops"
-                        aria-describedby="skill-devops-desc"
-                      >
-                        <title id="skill-devops">
-                          Skill DevOps & Tools - 65%
-                        </title>
-                        <desc id="skill-devops-desc">
-                          Skills in DevOps & Tools include Git, GitHub, Azure,
-                          Docker
-                        </desc>
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle
-                          class="progress"
-                          cx="70"
-                          cy="70"
-                          r="70"
-                        ></circle>
-                      </svg>
-                      <div class="skill-text">
-                        <div class="skill-percent">0%</div>
-                        <div class="skill-name">DevOps & Tools</div>
-                      </div>
-                    </div>
-                    <p class="text-white text-center mt-3">
-                      Git, GitHub, Azure, Docker
-                    </p>
-                  </div>
-                </div>
-                <p class="text-white text-center">
-                  The more I learn, the more I realize how much more there is to
-                  learn. Of course, this measure is very subjective and based on
-                  my own feelings.
+          <div class="row g-4 mt-2">
+            <div class="col-md-6 col-xl-3">
+              <div class="proof-card h-100">
+                <h3 class="proof-title">
+                  <span data-lang="cs">1 rok produkce</span>
+                  <span data-lang="en">1 year in production</span>
+                </h3>
+                <p class="proof-text">
+                  <span data-lang="cs"
+                    >edubox.cz: OIDC/SSO autentizace, S3 úložiště, filemanager.
+                    ABP.IO framework, .NET + Vue.</span
+                  >
+                  <span data-lang="en"
+                    >edubox.cz: OIDC/SSO authentication, S3 storage, file manager.
+                    ABP.IO framework, .NET + Vue.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="proof-card h-100">
+                <h3 class="proof-title">Microservices + DDD</h3>
+                <p class="proof-text">
+                  <span data-lang="cs"
+                    >Doménově řízený návrh, jasné hranice, čisté modely.</span
+                  >
+                  <span data-lang="en"
+                    >Domain-driven design, clear boundaries, clean models.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="proof-card h-100">
+                <h3 class="proof-title">Event-driven</h3>
+                <p class="proof-text">
+                  <span data-lang="cs"
+                    >Integrace přes eventy a asynchronní zpracování.</span
+                  >
+                  <span data-lang="en"
+                    >Event-based integration and async processing.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="proof-card h-100">
+                <h3 class="proof-title">
+                  <span data-lang="cs">Vlastní produkty</span>
+                  <span data-lang="en">Side projects</span>
+                </h3>
+                <p class="proof-text">
+                  <span data-lang="cs"
+                    >React Exhibit, Můj Domeček, hapecko.x213.cz.</span
+                  >
+                  <span data-lang="en"
+                    >React Exhibit, Můj Domeček, hapecko.x213.cz.</span
+                  >
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- projects section -->
-      <section id="projects">
+      <!-- skill section -->
+      <section id="skills" class="section-pad">
         <div class="container">
-          <h2 class="text-center text-primary m-3">Projects</h2>
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-          >
-            <!-- Order form -->
-            <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
-                <img
-                  src=""
-                  class="card-img-top"
-                  alt="Under testing and construction"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">React Showcase</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">
-                    React Web Pages
-                  </h6>
-                  <p class="card-text">
-                    React and JavaScript and Bootstrap 5 are used to create a
-                    something.
-                  </p>
-                  <div
-                    class="mt-auto d-flex justify-content-around align-items-center"
-                  >
-                    <a
-                      href="https://x213.cz/ReactShowcase"
-                      class="btn btn-primary"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Open order form for petshop in a new tab"
-                      >Live Demo
-                    </a>
-                    <!-- <a
-                      href="https://github.com/Dejwcz/exam2"
-                      class="btn btn-primary"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Open GitHub repository of order form for petshop in a new tab"
-                      >GitHub</a> -->
-                  </div>
+          <div class="section-head text-center">
+            <h2 class="section-title">
+              <span data-lang="cs">Dovednosti</span>
+              <span data-lang="en">Skills</span>
+            </h2>
+            <p class="section-lead">
+              <span data-lang="cs"
+                >Jen stack, se kterým reálně pracuju.</span
+              >
+              <span data-lang="en"
+                >Just the stack I use in practice.</span
+              >
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="skills-panel">
+                <h3 class="skills-title">
+                  <span data-lang="cs">Backend</span>
+                  <span data-lang="en">Backend</span>
+                </h3>
+                <div class="skills-chips">
+                  <span class="skill-chip">C# / .NET</span>
+                  <span class="skill-chip">ASP.NET Core</span>
+                  <span class="skill-chip">EF Core</span>
+                  <span class="skill-chip">REST APIs</span>
                 </div>
               </div>
             </div>
+            <div class="col-md-6">
+              <div class="skills-panel">
+                <h3 class="skills-title">
+                  <span data-lang="cs">Data</span>
+                  <span data-lang="en">Data</span>
+                </h3>
+                <div class="skills-chips">
+                  <span class="skill-chip">MS SQL</span>
+                  <span class="skill-chip">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skills-panel">
+                <h3 class="skills-title">
+                  <span data-lang="cs">Frontend</span>
+                  <span data-lang="en">Frontend</span>
+                </h3>
+                <div class="skills-chips">
+                  <span class="skill-chip">Vue</span>
+                  <span class="skill-chip">React</span>
+                  <span class="skill-chip">JavaScript</span>
+                  <span class="skill-chip">HTML</span>
+                  <span class="skill-chip">CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skills-panel">
+                <h3 class="skills-title">
+                  <span data-lang="cs">Architektura</span>
+                  <span data-lang="en">Architecture</span>
+                </h3>
+                <div class="skills-chips">
+                  <span class="skill-chip">Microservices</span>
+                  <span class="skill-chip">DDD</span>
+                  <span class="skill-chip">Event-driven</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- projects section -->
+      <section id="projects" class="section-pad">
+        <div class="container">
+          <div class="section-head text-center">
+            <h2 class="section-title">
+              <span data-lang="cs">Vybrané projekty</span>
+              <span data-lang="en">Featured Projects</span>
+            </h2>
+            <p class="section-lead">
+              <span data-lang="cs"
+                >Projekty, které právě ladím.</span
+              >
+              <span data-lang="en"
+                >Projects I'm currently polishing.</span
+              >
+            </p>
+          </div>
+          <div class="row g-4 mt-2">
+            <div class="col-lg-4">
+              <article class="project-card h-100">
+                <div class="project-media">
+                  <img
+                    src="./pictures/reactexhibit.png"
+                    alt="React Exhibit preview"
+                    loading="lazy"
+                  />
+                  <span class="project-badge">
+                    <span data-lang="cs">Vybrané</span>
+                    <span data-lang="en">Featured</span>
+                  </span>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">React Exhibit</h3>
+                  <p class="project-meta">React, TypeScript, Tailwind, Vite</p>
+                  <p class="project-text">
+                    <span data-lang="cs"
+                      >Ukázka moderních React features, glassmorphism designu a
+                      plynulých animací postavená na Vite, TypeScriptu a
+                      Tailwind CSS.</span
+                    >
+                    <span data-lang="en"
+                      >A showcase of modern React features, beautiful
+                      glassmorphism design, and smooth animations built with
+                      Vite, TypeScript, and Tailwind CSS.</span
+                    >
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://x213.cz/ReactShowcase"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span data-lang="cs">Ukázka</span>
+                      <span data-lang="en">Live demo</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="project-card h-100">
+                <div class="project-media">
+                  <img
+                    src="./pictures/mujdomecek.png"
+                    alt="Můj Domeček preview"
+                    loading="lazy"
+                  />
+                  <span class="project-badge">
+                    <span data-lang="cs">Vybrané</span>
+                    <span data-lang="en">Featured</span>
+                  </span>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Můj Domeček</h3>
+                  <p class="project-meta">.NET, ASP.NET Core, EF Core</p>
+                  <p class="project-text">
+                    <span data-lang="cs"
+                      >Aplikace pro evidenci oprav a prací kolem domu. Ukládá
+                      kontext (proč jsem něco udělal a kudy vede kabel), takže
+                      se v tom po letech neztratím.</span
+                    >
+                    <span data-lang="en"
+                      >An app to log repairs and work around my house. It
+                      preserves context (why I did something and where a cable
+                      runs), so I do not have to guess years later.</span
+                    >
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://mujdomecek.runasp.net/"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span data-lang="cs">Ukázka</span>
+                      <span data-lang="en">Live demo</span>
+                    </a>
+                    <a
+                      href="https://github.com/Dejwcz/MyLittleHouse"
+                      class="btn btn-outline-primary btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="project-card h-100">
+                <div class="project-media">
+                  <img src="./pictures/hapecko.png" alt="Hapecko preview" loading="lazy" />
+                  <span class="project-badge">
+                    <span data-lang="cs">Vybrané</span>
+                    <span data-lang="en">Featured</span>
+                  </span>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">hapecko.x213.cz</h3>
+                  <p class="project-meta">PHP, Admin, Restaurant Web</p>
+                  <p class="project-text">
+                    <span data-lang="cs"
+                      >Web pro restauraci s kompletním PHP adminem pro správu
+                      obsahu, menu a rezervací.</span
+                    >
+                    <span data-lang="en"
+                      >Restaurant website with a full PHP admin for managing
+                      content, menus, and reservations.</span
+                    >
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://hapecko.x213.cz"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span data-lang="cs">Ukázka</span>
+                      <span data-lang="en">Live demo</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="section-divider"></div>
+          <h3 class="section-subtitle">
+            <span data-lang="cs">Další projekty</span>
+            <span data-lang="en">More Projects</span>
+          </h3>
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
             <!-- exam project -->
             <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
+              <div class="card project-card h-100 d-flex flex-column">
                 <img
                   src="./pictures/examproject.png"
                   class="card-img-top"
-                  alt="obrazek"
+                  alt="Galerie Mezi Poli preview"
+                  loading="lazy"
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Galerie Mezi Poli</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
-                    Web Page with AI-generated Images
+                    <span data-lang="cs">Web s AI generovanými obrázky</span>
+                    <span data-lang="en">Web Page with AI-generated Images</span>
                   </h6>
                   <p class="card-text">
-                    The Galerie Mezi Poli website, built with Bootstrap,
-                    features a modern and responsive design. The project
-                    includes a user-friendly interface with AI-generated images
-                    and streamlined navigation to showcase art and the gallery.
+                    <span data-lang="cs"
+                      >Responzivní web galerie s AI obrázky. Bootstrap, čisté UI,
+                      jednoduchá navigace. Pouze česky.</span
+                    >
+                    <span data-lang="en"
+                      >Responsive gallery site with AI-generated images. Bootstrap,
+                      clean UI, simple navigation. Czech only.</span
+                    >
                   </p>
                   <div
                     class="mt-auto d-flex justify-content-around align-items-center"
                   >
-                    <a
-                      href="https://x213.cz/examproject"
-                      class="btn btn-primary"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Open project Galerie Mezi Poli in a new tab"
-                      >Live Demo
-                    </a>
+                    <span
+                      class="btn btn-outline-secondary disabled"
+                      role="button"
+                      aria-disabled="true"
+                    >
+                      <span data-lang="cs">Demo offline</span>
+                      <span data-lang="en">Demo offline</span>
+                    </span>
                     <a
                       href="https://github.com/Dejwcz/GalerieMeziPoli"
                       class="btn btn-primary"
@@ -460,67 +611,30 @@
                 </div>
               </div>
             </div>
-            <!-- muj domecek -->
-            <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
-                <img
-                  src="./pictures/mujdomecek.png"
-                  class="card-img-top"
-                  alt="Muj Domeček picture"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Můj Domeček</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">
-                    ASP.NET Core Application
-                  </h6>
-                  <p class="card-text">
-                    Můj Domeček is a web app for tracking all home related tasks
-                    or repairs, maintenance and keeping info easily accessible
-                    for years. Built with ASP.NET Core MVC, EF Core, and
-                    Bootstrap 5, it offers a responsive design and supports
-                    Czech and English.
-                  </p>
-                  <div
-                    class="mt-auto d-flex justify-content-around align-items-center"
-                  >
-                    <a
-                      href="https://mujdomecek.runasp.net/"
-                      class="btn btn-primary"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Open project Můj Domeček in a new tab"
-                      >Live Demo</a
-                    >
-                    <a
-                      href="https://github.com/Dejwcz/MyLittleHouse"
-                      class="btn btn-primary"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Open GitHub repository of Můj Domeček in a new tab"
-                      >GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
             <!-- Order form -->
             <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
+              <div class="card project-card h-100 d-flex flex-column">
                 <img
                   src="./pictures/orderform.png"
                   class="card-img-top"
-                  alt="obrazek"
+                  alt="Order form preview"
+                  loading="lazy"
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Order form</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
-                    Web Page with JavaScript
+                    <span data-lang="cs">Webová stránka s JavaScriptem</span>
+                    <span data-lang="en">Web Page with JavaScript</span>
                   </h6>
                   <p class="card-text">
-                    This interactive order page for animal feed lets users
-                    select diferrent choices with real-time price updates and
-                    dynamic budget validation—all within a responsive design
-                    built using HTML, CSS, and JavaScript.
+                    <span data-lang="cs"
+                      >Objednávkový formulář s live přepočtem ceny a kontrolou
+                      rozpočtu. HTML, CSS, JS.</span
+                    >
+                    <span data-lang="en"
+                      >Order form with live price calculation and budget validation.
+                      HTML, CSS, JS.</span
+                    >
                   </p>
                   <div
                     class="mt-auto d-flex justify-content-around align-items-center"
@@ -530,15 +644,16 @@
                       class="btn btn-primary"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Open order form for petshop in a new tab"
-                      >Live Demo
+                      aria-label="Open order form demo in a new tab"
+                      ><span data-lang="cs">Ukázka</span>
+                      <span data-lang="en">Live demo</span>
                     </a>
                     <a
                       href="https://github.com/Dejwcz/exam2"
                       class="btn btn-primary"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Open GitHub repository of order form for petshop in a new tab"
+                      aria-label="Open GitHub repository of order form in a new tab"
                       >GitHub</a
                     >
                   </div>
@@ -547,23 +662,29 @@
             </div>
             <!-- BrickGame -->
             <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
+              <div class="card project-card h-100 d-flex flex-column">
                 <img
                   src="./pictures/brickgame.png"
                   class="card-img-top"
-                  alt="Brick game picture"
+                  alt="Tetris clone preview"
+                  loading="lazy"
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Tetris Clone</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
-                    WPF Application
+                    <span data-lang="cs">WPF aplikace</span>
+                    <span data-lang="en">WPF Application</span>
                   </h6>
                   <p class="card-text">
-                    This non-commercial Tetris variant in C# and WPF
-                    demonstrates my skills, utilizing MVVM and data binding for
-                    seamless UI and logic updates. It features smooth gameplay,
-                    responsive controls, and a user-friendly interface built
-                    with WPF styles, templates, and layouts.
+                    <span data-lang="cs"
+                      >Nekomerční varianta Tetrisu v C# a WPF. Využívá MVVM a
+                      data binding pro propojení UI a logiky, plynulé ovládání a
+                      přehledné rozhraní postavené na WPF stylech a templátech.</span
+                    >
+                    <span data-lang="en"
+                      >Non-commercial Tetris clone in C# and WPF. MVVM pattern,
+                      data binding, smooth controls.</span
+                    >
                   </p>
                   <div
                     class="mt-auto d-flex justify-content-around align-items-center"
@@ -582,23 +703,30 @@
             </div>
             <!-- magistri -->
             <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
+              <div class="card project-card h-100 d-flex flex-column">
                 <img
                   src="./pictures/magistri.png"
                   class="card-img-top"
-                  alt="Magistri app picture"
+                  alt="Magistri app preview"
+                  loading="lazy"
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Magistri</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
-                    ASP.NET Core Application
+                    <span data-lang="cs">ASP.NET Core aplikace</span>
+                    <span data-lang="en">ASP.NET Core Application</span>
                   </h6>
                   <p class="card-text">
-                    This school project is a simple ASP.NET Core web application
-                    for managing school agendas, showcasing my skills in C# and
-                    Entity Framework (EF) for database integration. The
-                    application allows efficient management of school-related
-                    data with a clean, user-friendly interface.
+                    <span data-lang="cs"
+                      >Školní projekt: jednoduchá ASP.NET Core aplikace pro
+                      správu školních agend. Ukazuje práci s C# a Entity
+                      Frameworkem pro databázovou vrstvu v přehledném
+                      rozhraní.</span
+                    >
+                    <span data-lang="en"
+                      >School project: ASP.NET Core app for managing school agendas.
+                      C#, Entity Framework, clean UI.</span
+                    >
                   </p>
                   <div
                     class="mt-auto d-flex justify-content-around align-items-center"
@@ -609,7 +737,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Open project Magistri in a new tab"
-                      >Live Demo</a
+                      ><span data-lang="cs">Ukázka</span>
+                      <span data-lang="en">Live demo</span></a
                     >
                     <a
                       href="https://github.com/Dejwcz/Magistri"
@@ -625,29 +754,36 @@
             </div>
             <!-- RIS -->
             <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
+              <div class="card project-card h-100 d-flex flex-column">
                 <img
                   src="./pictures/RIS.png"
                   class="card-img-top"
-                  alt="Company Information System picture"
+                  alt="RIS 0.4 preview"
+                  loading="lazy"
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">RIS 0.4</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">
-                    WPF Application
+                    <span data-lang="cs">WPF aplikace</span>
+                    <span data-lang="en">WPF Application</span>
                   </h6>
                   <p class="card-text">
-                    This project was created as a final assignment for the
-                    certified professional retraining course "C# Programmer. The
-                    "RIS – Company Information System" application demonstrates
-                    a solution for managing and analyzing personnel data within
-                    a military company environment.
+                    <span data-lang="cs"
+                      >Závěrečný projekt rekvalifikačního kurzu C# Programátor.
+                      RIS - Company Information System řeší správu a analýzu
+                      personálních dat ve vojenském prostředí.</span
+                    >
+                    <span data-lang="en"
+                      >Final project for the C# Programmer retraining course.
+                      RIS - Company Information System manages and analyzes
+                      personnel data in a military unit.</span
+                    >
                   </p>
                   <div
                     class="mt-auto d-flex justify-content-around align-items-center"
                   >
                     <a
-                      href="https://github.com/Dejwcz/MyLittleHouse"
+                      href="https://github.com/Dejwcz/RIS"
                       class="btn btn-primary"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -660,22 +796,30 @@
             </div>
             <!-- Math Example Generator -->
             <div class="col mb-1">
-              <div class="card h-100 d-flex flex-column">
+              <div class="card project-card h-100 d-flex flex-column">
                 <img
                   src="./pictures/mathgen.png"
                   class="card-img-top"
-                  alt="Math Example Generator picture"
+                  alt="Examples generator preview"
+                  loading="lazy"
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Examples generator</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Python</h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span data-lang="cs">Python</span>
+                    <span data-lang="en">Python</span>
+                  </h6>
                   <p class="card-text">
-                    Examples Generator is a simple Python tool that creates
-                    custom math exercises based on user-defined parameters
-                    (number of operands, chosen operators, interval, decimal
-                    settings, etc.). It outputs both examples and solutions to
-                    text files in either English or Czech, making it easy to
-                    practice and check your work.
+                    <span data-lang="cs"
+                      >Jednoduchý Python nástroj generuje matematické příklady
+                      podle zadaných parametrů (počet operandů, operátory,
+                      interval, desetinná místa). Vypisuje zadání i řešení do
+                      textových souborů v češtině nebo angličtině.</span
+                    >
+                    <span data-lang="en"
+                      >Python tool that generates math exercises with custom parameters.
+                      Outputs problems and solutions to text files.</span
+                    >
                   </p>
                   <div
                     class="mt-auto d-flex justify-content-around align-items-center"
@@ -695,152 +839,25 @@
           </div>
         </div>
       </section>
-      <!-- hobbies -->
-      <section id="hobbies">
-        <div class="container">
-          <h2 class="text-center text-primary m-3">My Hobbies</h2>
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            aria-live="polite"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./pictures/carousel/climbing.jpg"
-                  class="d-block w-100 rounded-2"
-                  alt="Dejw as climber"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Climbing</h5>
-                  <p>No longer as often as before</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./pictures/carousel/brontik.jpg"
-                  class="d-block w-100 rounded-2"
-                  alt="Dejw on the ladder"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Volunteering</h5>
-                  <p>Several times a year as a brontík at Helfštýn Castle</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./pictures/carousel/family.JPG"
-                  class="d-block w-100 rounded-2"
-                  alt="Dejw's son"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Being a dad</h5>
-                  <p>I love my family</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./pictures/carousel/army.jpg"
-                  class="d-block w-100 rounded-2"
-                  alt="Dejw as soldier"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Being a soldier</h5>
-                  <p>
-                    I served for seven years, so I'm still close to the
-                    military.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./pictures/carousel/hk.jpg"
-                  class="d-block w-100 rounded-2"
-                  alt="Dejw hiking"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Hiking</h5>
-                  <p>
-                    Walking in the mountains is good for clearing your head.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <p class="text-primary text-center d-block d-md-none">
-          Climbing, volunteering, being a dad, being a soldier and hiking
-        </p>
-      </section>
       <!-- contact Me -->
-      <section id="contact-me">
+      <section id="contact-me" class="section-pad">
         <div class="container mt-3">
           <div
             class="border border-2 border-primary rounded-2 p-3 position-relative"
           >
-            <h2 class="text-center text-primary m-3">Contact Me</h2>
+            <h2 class="section-title text-center">
+              <span data-lang="cs">Kontakt</span>
+              <span data-lang="en">Contact</span>
+            </h2>
             <div
               class="position-absolute top-0 end-0 text-primary me-2 d-flex align-items-center gap-1"
             >
-              <p class="mb-0"><small>Powered by</small></p>
+              <p class="mb-0">
+                <small>
+                  <span data-lang="cs">Formulář běží na</span>
+                  <span data-lang="en">Powered by</span>
+                </small>
+              </p>
               <img
                 src="./pictures/formspree-new.svg"
                 alt="Formspree Logo"
@@ -854,18 +871,26 @@
               class="row g-3"
             >
               <div class="col-md-6">
-                <label for="inputName" class="form-label">Name</label>
+                <label for="inputName" class="form-label">
+                  <span data-lang="cs">Jméno</span>
+                  <span data-lang="en">Name</span>
+                </label>
                 <input
                   type="text"
                   class="form-control"
                   id="inputName"
                   name="name"
-                  placeholder="Your name"
+                  placeholder="Vaše jméno"
+                  data-placeholder-cs="Vaše jméno"
+                  data-placeholder-en="Your name"
                   required
                   aria-required="true"
                   aria-describedby="nameHelp"
                 />
-                <div id="nameHelp" class="visually-hidden">Enter your name</div>
+                <div id="nameHelp" class="visually-hidden">
+                  <span data-lang="cs">Zadejte své jméno</span>
+                  <span data-lang="en">Enter your name</span>
+                </div>
               </div>
               <div class="col-md-6">
                 <label for="inputEmail" class="form-label">Email</label>
@@ -874,28 +899,37 @@
                   class="form-control"
                   id="inputEmail"
                   name="email"
-                  placeholder="Your email address"
+                  placeholder="Váš e-mail"
+                  data-placeholder-cs="Váš e-mail"
+                  data-placeholder-en="Your email address"
                   required
                   aria-required="true"
                   aria-describedby="emailHelp"
                 />
                 <div id="emailHelp" class="visually-hidden">
-                  Enter your email
+                  <span data-lang="cs">Zadejte svůj e-mail</span>
+                  <span data-lang="en">Enter your email</span>
                 </div>
               </div>
               <div class="col-12">
-                <label for="inputMessage" class="form-label">Message</label>
+                <label for="inputMessage" class="form-label">
+                  <span data-lang="cs">Zpráva</span>
+                  <span data-lang="en">Message</span>
+                </label>
                 <textarea
                   class="form-control"
                   id="inputMessage"
                   name="message"
-                  placeholder="Your message here (something like 'Hi David, I like your work...' 8 )"
+                  placeholder="Napište zprávu (např. 'Ahoj Davide, líbí se mi tvoje práce...')"
+                  data-placeholder-cs="Napište zprávu (např. 'Ahoj Davide, líbí se mi tvoje práce...')"
+                  data-placeholder-en="Your message here (something like 'Hi David, I like your work...')"
                   required
                   aria-required="true"
                   aria-describedby="inputMessageHelp"
                 ></textarea>
                 <div id="inputMessageHelp" class="visually-hidden">
-                  Here enter your message
+                  <span data-lang="cs">Zde napište zprávu</span>
+                  <span data-lang="en">Enter your message</span>
                 </div>
               </div>
               <div class="col-12">
@@ -907,7 +941,8 @@
                     aria-label="Send message"
                     title="Send your message via the contact form"
                   >
-                    Send
+                    <span data-lang="cs">Odeslat</span>
+                    <span data-lang="en">Send</span>
                   </button>
                 </div>
               </div>
@@ -923,8 +958,11 @@
         </div>
       </section>
       <!-- Social sites  -->
-      <section id="contact-social-sites">
-        <h2 class="text-center text-primary m-3">Or find me on</h2>
+      <section id="contact-social-sites" class="section-pad">
+        <h2 class="section-title text-center">
+          <span data-lang="cs">Najdete mě i na</span>
+          <span data-lang="en">Or find me on</span>
+        </h2>
         <div class="d-flex justify-content-center mb-3">
           <a class="mx-2" href="http://bit.ly/3WUAFuD" aria-label="My profile"
             ><svg
@@ -981,12 +1019,24 @@
       </section>
     </main>
 
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+      </svg>
+    </button>
+
     <footer
       class="footer bg-primary small text-center text-white p-3"
       aria-label="Copyright information"
     >
       <div class="container px-4 px-lg-5">
-        © 2025 David Smětala. All rights reserved.
+        <span data-lang="cs">© 2025 David Smětala. Všechna práva vyhrazena.</span>
+        <span data-lang="en">© 2025 David Smětala. All rights reserved.</span>
       </div>
     </footer>
 
@@ -995,7 +1045,11 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/langToggle.js"></script>
     <script src="./js/skillProgresChart.js"></script>
     <script src="./js/emailForm.js"></script>
-  </body>
+    <script src="./js/scrollAnimations.js"></script>
+    <script src="./js/activeNav.js"></script>
+    <script src="./js/backToTop.js"></script>
+      </body>
 </html>

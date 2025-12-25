@@ -29,13 +29,13 @@ $info: #37bdf8;
 // Then add additional custom code here
 
 body {
-  // background-image: url("../pictures/background2.webp");
-  // background-size: cover; /* Roztáhne obrázek na celou stránku */
-  // background-position: center; /* Vycentruje obrázek */
-  // background-repeat: no-repeat; /* Zabrání opakování */
-  // background-attachment: fixed; /* Fixuje pozadí při scrollování */
   font-family: "Play", sans-serif;
-  padding-top: 52px;
+  padding-top: 72px;
+  color: #0f1a2b;
+  background: radial-gradient(circle at 10% 10%, #eef2ff 0%, transparent 55%),
+    radial-gradient(circle at 80% 20%, #e0f2ff 0%, transparent 45%),
+    #f7f9ff;
+  background-attachment: fixed;
 }
 
 // skill progress chart begin
@@ -105,3 +105,346 @@ body {
   transform: translateY(0);
 }
 // skill progress chart end
+
+:root {
+  --ink: #0f1a2b;
+  --muted: #55617a;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: #ffffff;
+  --stroke: rgba(15, 26, 43, 0.08);
+  --shadow-soft: 0 18px 45px rgba(15, 26, 43, 0.12);
+  --shadow-strong: 0 24px 60px rgba(15, 26, 43, 0.2);
+}
+
+[data-lang="cs"] [data-lang="en"],
+[data-lang="en"] [data-lang="cs"] {
+  display: none;
+}
+
+.section-pad {
+  padding: 64px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: clamp(1.6rem, 2.2vw, 2.3rem);
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.section-lead {
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0.5rem auto 0;
+}
+
+.section-head {
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-top: 1.5rem;
+}
+
+.section-divider {
+  height: 1px;
+  background: rgba(15, 26, 43, 0.1);
+  margin: 2.5rem 0 1.5rem;
+}
+
+.main-nav {
+  backdrop-filter: blur(10px);
+  background: rgba(53, 99, 233, 0.95);
+  box-shadow: 0 12px 30px rgba(15, 26, 43, 0.2);
+}
+
+.brand-name {
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+
+.brand-role {
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.lang-toggle .btn.active {
+  background: #ffffff;
+  color: #1b2a55;
+  border-color: #ffffff;
+}
+
+.navbar-nav .nav-link.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-role {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.hero-lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.hero-sub {
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.hero-tags .tag {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.hero-media {
+  position: relative;
+}
+
+.hero-photo {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.hero-card {
+  position: absolute;
+  right: -16px;
+  bottom: -16px;
+  background: var(--surface-strong);
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--stroke);
+}
+
+.hero-card-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.hero-card-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink);
+}
+
+.proof-card {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.proof-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.proof-text {
+  color: var(--muted);
+  margin: 0;
+}
+
+.skills-panel {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.skills-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  background: #ffffff;
+  border: 1px solid var(--stroke);
+  color: var(--ink);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.project-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+}
+
+.project-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.project-media {
+  position: relative;
+}
+
+.project-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0f1a2b;
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.project-body {
+  padding: 1.25rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-text {
+  color: var(--muted);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .hero-card {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .hero-photo {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+// Back to top button
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: $primary;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// Skill chips hover
+.skill-chip {
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    background: $primary;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(53, 99, 233, 0.3);
+  }
+}
+
+// Scroll animations
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Stagger delay for cards
+.proof-card.fade-in,
+.project-card.fade-in,
+.skills-panel.fade-in {
+  transition-delay: calc(var(--i, 0) * 0.1s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated,
+  .project-card,
+  .skill-circle .progress,
+  .fade-in {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
