@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(git checkout:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(npx sass:*)",
+      "Bash(git add:*)"
     ]
   }
 }

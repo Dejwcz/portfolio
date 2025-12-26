@@ -140,11 +140,13 @@ section[id] {
   border-radius: 0 0 12px 0;
   box-shadow: var(--shadow-soft);
   z-index: 1100;
-}
+  pointer-events: none;
 
-.skip-link:focus,
-.skip-link:focus-visible {
-  transform: translateY(0);
+  &:focus,
+  &:focus-visible {
+    transform: translateY(0);
+    pointer-events: auto;
+  }
 }
 
 [data-lang="cs"] [data-lang="en"],
@@ -190,6 +192,10 @@ section[id] {
   backdrop-filter: blur(10px);
   background: rgba(53, 99, 233, 0.95);
   box-shadow: 0 12px 30px rgba(15, 26, 43, 0.2);
+
+  .navbar-toggler {
+    margin: 0.25rem 0;
+  }
 }
 
 .brand-name {
@@ -207,6 +213,14 @@ section[id] {
   background: #ffffff;
   color: #1b2a55;
   border-color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  .lang-toggle {
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 .navbar-nav .nav-link.active {
