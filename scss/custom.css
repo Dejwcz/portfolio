@@ -11954,6 +11954,37 @@ body {
   --stroke: rgba(15, 26, 43, 0.08);
   --shadow-soft: 0 18px 45px rgba(15, 26, 43, 0.12);
   --shadow-strong: 0 24px 60px rgba(15, 26, 43, 0.2);
+  --nav-offset: 84px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-offset);
+}
+
+section[id] {
+  scroll-margin-top: var(--nav-offset);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-140%);
+  background: #ffffff;
+  color: var(--ink);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid rgba(15, 26, 43, 0.2);
+  border-radius: 0 0 12px 0;
+  box-shadow: var(--shadow-soft);
+  z-index: 1100;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 [data-lang=cs] [data-lang=en],
@@ -12268,6 +12299,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .animated,
   .project-card,
   .skill-circle .progress,

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3563e9" />
+    <meta name="color-scheme" content="light" />
 
     <meta
       name="description"
@@ -22,10 +24,15 @@
       content="Selected .NET and full-stack work, proof of experience, and contact."
     />
     <meta property="og:image" content="https://x213.cz/pictures/preview.png" />
+    <meta
+      property="og:image:alt"
+      content="Preview of David Smětala portfolio website"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://x213.cz/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="x213.cz" />
 
     <!-- Twitter Cards -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -41,8 +48,13 @@
       property="twitter:image"
       content="https://x213.cz/pictures/preview.png"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Preview of David Smětala portfolio website"
+    />
 
     <title>David Smětala | Software Engineer (.NET / Full-stack)</title>
+    <link rel="canonical" href="https://x213.cz/" />
 
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -73,6 +85,10 @@
     </script>
   </head>
   <body class="bg-primary-subtle site-root" id="top">
+    <a class="skip-link" href="#main-content">
+      <span data-lang="cs">Přeskočit na obsah</span>
+      <span data-lang="en">Skip to content</span>
+    </a>
     <header class="header">
       <nav
         class="navbar navbar-expand-lg bg-primary rounded-bottom-3 navbar-dark fixed-top p-0 main-nav"
@@ -132,7 +148,11 @@
                 </a>
               </li>
             </ul>
-            <div class="lang-toggle d-flex gap-2 ms-lg-3">
+            <div
+              class="lang-toggle d-flex gap-2 ms-lg-3"
+              role="group"
+              aria-label="Language selector"
+            >
               <button
                 class="btn btn-sm btn-outline-light"
                 type="button"
@@ -154,7 +174,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section id="about" class="hero-section section-pad">
         <div class="container">
           <div class="row align-items-center g-4">
@@ -880,6 +900,7 @@
                   class="form-control"
                   id="inputName"
                   name="name"
+                  autocomplete="name"
                   placeholder="Vaše jméno"
                   data-placeholder-cs="Vaše jméno"
                   data-placeholder-en="Your name"
@@ -899,6 +920,8 @@
                   class="form-control"
                   id="inputEmail"
                   name="email"
+                  autocomplete="email"
+                  inputmode="email"
                   placeholder="Váš e-mail"
                   data-placeholder-cs="Váš e-mail"
                   data-placeholder-en="Your email address"
@@ -938,7 +961,6 @@
                     id="my-form-button"
                     type="submit"
                     class="btn btn-primary w-100"
-                    aria-label="Send message"
                     title="Send your message via the contact form"
                   >
                     <span data-lang="cs">Odeslat</span>
@@ -971,7 +993,8 @@
               height="40"
               fill="currentColor"
               viewBox="0 0 16 16"
-              role="img"
+              aria-hidden="true"
+              focusable="false"
             >
               <path
                 aria-hidden="true"
@@ -989,7 +1012,8 @@
               height="40"
               fill="currentColor"
               viewBox="0 0 16 16"
-              role="img"
+              aria-hidden="true"
+              focusable="false"
             >
               <path
                 aria-hidden="true"
@@ -1007,7 +1031,8 @@
               height="40"
               fill="currentColor"
               viewBox="0 0 16 16"
-              role="img"
+              aria-hidden="true"
+              focusable="false"
             >
               <path
                 aria-hidden="true"
@@ -1022,10 +1047,19 @@
     <button
       id="back-to-top"
       class="back-to-top"
+      type="button"
       aria-label="Back to top"
       title="Back to top"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+        aria-hidden="true"
+        focusable="false"
+      >
         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
       </svg>
     </button>
@@ -1046,7 +1080,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/langToggle.js"></script>
-    <script src="./js/skillProgresChart.js"></script>
     <script src="./js/emailForm.js"></script>
     <script src="./js/scrollAnimations.js"></script>
     <script src="./js/activeNav.js"></script>

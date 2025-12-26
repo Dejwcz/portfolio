@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("my-form");
   const status = document.getElementById("my-form-status");
+  const submitButton = document.getElementById("my-form-button");
+
+  if (!form || !status || !submitButton) return;
 
   const messages = {
     cs: {
@@ -22,31 +25,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const lang = getLang();
-    status.textContent = messages[lang].sending;
-    status.style.color = "blue";
 
-    const data = new FormData(form);
-    fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { Accept: "application/json" },
-    })
-      .then((response) => {
-        const responseLang = getLang();
-        if (response.ok) {
-          status.textContent = messages[responseLang].success;
-          status.style.color = "green";
-          form.reset();
-        } else {
-          status.textContent = messages[responseLang].fail;
-          status.style.color = "red";
-        }
-      })
-      .catch(() => {
-        const responseLang = getLang();
-        status.textContent = messages[responseLang].network;
-        status.style.color = "red";
+    const setBusy = (busy) => {
+      submitButton.disabled = busy;
+      if (busy) {
+        submitButton.setAttribute("aria-disabled", "true");
+        form.setAttribute("aria-busy", "true");
+      } else {
+        submitButton.removeAttribute("aria-disabled");
+        form.removeAttribute("aria-busy");
+      }
+    };
+
+    const setStatus = (text, color) => {
+      status.textContent = text;
+      status.style.color = color;
+    };
+
+    const lang = getLang();
+    setBusy(true);
+    setStatus(messages[lang].sending, "blue");
+
+    try {
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { Accept: "application/json" },
       });
+
+      const responseLang = getLang();
+      if (response.ok) {
+        setStatus(messages[responseLang].success, "green");
+        form.reset();
+      } else {
+        setStatus(messages[responseLang].fail, "red");
+      }
+    } catch {
+      const responseLang = getLang();
+      setStatus(messages[responseLang].network, "red");
+    } finally {
+      setBusy(false);
+    }
   });
 });
