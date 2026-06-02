@@ -316,6 +316,17 @@ section[id] {
   margin-top: 0.35rem;
 }
 
+.hero-card-list a {
+  color: $primary;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
 .hero-links {
   margin-top: 1rem;
 }

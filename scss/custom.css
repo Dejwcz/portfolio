@@ -12068,6 +12068,15 @@ section[id] {
   position: relative;
 }
 
+.hero-kicker {
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #3563e9;
+}
+
 .hero-title {
   font-size: clamp(2.2rem, 3.5vw, 3.4rem);
   font-weight: 700;
@@ -12083,13 +12092,15 @@ section[id] {
 }
 
 .hero-lead {
-  font-size: 1.05rem;
-  color: var(--muted);
+  font-size: clamp(1.05rem, 1.2vw, 1.18rem);
+  color: var(--ink);
+  max-width: 42rem;
 }
 
 .hero-sub {
   color: var(--muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.95rem;
+  max-width: 42rem;
 }
 
 .hero-tags .tag {
@@ -12135,6 +12146,33 @@ section[id] {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--ink);
+}
+
+.hero-card-list li + li {
+  margin-top: 0.35rem;
+}
+
+.hero-card-list a {
+  color: #3563e9;
+  font-weight: 600;
+  text-decoration: none;
+}
+.hero-card-list a:hover, .hero-card-list a:focus-visible {
+  text-decoration: underline;
+}
+
+.hero-links {
+  margin-top: 1rem;
+}
+
+.hero-link {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+.hero-link:hover, .hero-link:focus-visible {
+  color: #3563e9;
+  text-decoration: underline;
 }
 
 .proof-card {
@@ -12246,122 +12284,6 @@ section[id] {
   gap: 0.5rem;
 }
 
-@media (max-width: 991px) {
-  .hero-card {
-    position: static;
-    margin-top: 1rem;
-  }
-  .hero-photo {
-    aspect-ratio: 16/10;
-  }
-}
-.back-to-top {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #3563e9;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-.back-to-top:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-.back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.skill-chip {
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-}
-.skill-chip:hover {
-  background: #3563e9;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(53, 99, 233, 0.3);
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.proof-card.fade-in,
-.project-card.fade-in,
-.skills-panel.fade-in {
-  transition-delay: calc(var(--i, 0) * 0.1s);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  .animated,
-  .project-card,
-  .skill-circle .progress,
-  .fade-in {
-    transition: none;
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.hero-kicker {
-  margin-bottom: 0.75rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #3563e9;
-}
-
-.hero-lead {
-  font-size: clamp(1.05rem, 1.2vw, 1.18rem);
-  color: var(--ink);
-  max-width: 42rem;
-}
-
-.hero-sub {
-  margin-bottom: 0.95rem;
-  max-width: 42rem;
-}
-
-.hero-card-list li + li {
-  margin-top: 0.35rem;
-}
-
-.hero-links {
-  margin-top: 1rem;
-}
-
-.hero-link {
-  color: var(--ink);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.hero-link:hover,
-.hero-link:focus-visible {
-  color: #3563e9;
-  text-decoration: underline;
-}
-
 .contact-shell {
   background: linear-gradient(135deg, rgba(53, 99, 233, 0.12), #f9fbff);
   border: 1px solid rgba(53, 99, 233, 0.12);
@@ -12383,7 +12305,6 @@ section[id] {
   border-color: transparent;
   box-shadow: var(--shadow-strong);
 }
-
 .contact-panel-copy .section-title {
   color: #ffffff;
 }
@@ -12470,11 +12391,83 @@ section[id] {
 }
 
 @media (max-width: 991px) {
+  .hero-card {
+    position: static;
+    margin-top: 1rem;
+  }
+  .hero-photo {
+    aspect-ratio: 16/10;
+  }
   .contact-shell {
     padding: 1rem;
   }
 }
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #3563e9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
 
+.skill-chip {
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.skill-chip:hover {
+  background: #3563e9;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(53, 99, 233, 0.3);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.proof-card.fade-in,
+.project-card.fade-in,
+.skills-panel.fade-in {
+  transition-delay: calc(var(--i, 0) * 0.1s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animated,
+  .project-card,
+  .skill-circle .progress,
+  .fade-in {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
 @media (max-width: 575px) {
   .hero-cta .btn,
   .contact-actions .btn,
